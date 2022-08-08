@@ -11,18 +11,11 @@ On this page you can create tasks yourself, delete them from the list and desele
 
 The project has been upgraded with new interesting features. Like hiding completed tasks and quickly deselecting all already completed tasks.
 
-
-<br>
-
-## 👀 Preview
-
-![preview](./public/previewToDo.gif)
-
 <br>
 
 ## 🕹️  Demo
 
-You can find the demo [here](https://radekjelen.github.io/to-do-list/)
+You can find the demo [here](https://radekjelen.github.io/to-do-list-React/)
 
 <br>
 
