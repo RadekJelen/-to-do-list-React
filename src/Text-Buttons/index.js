@@ -1,6 +1,6 @@
 import "./style.css";
 
-const TextButtons = ({ tasks, hideDoneTasks, toggleHideDone }) => {
+const TextButtons = ({ tasks, hideDoneTasks, toggleHideDone, markAllTasksDone }) => {
   if (tasks.length === 0) {
     return null;
   }
@@ -11,15 +11,16 @@ const TextButtons = ({ tasks, hideDoneTasks, toggleHideDone }) => {
         className="textButtons__button"
         onClick={toggleHideDone}
         disabled={tasks.every(({ done }) => !done)}
-			>
-				{hideDoneTasks ? "Pokaż" : "Ukryj"} ukończone
-			</button>
-			<button
+      >
+        {hideDoneTasks ? "Pokaż" : "Ukryj"} ukończone
+      </button>
+      <button
         className="textButtons__button"
+        onClick={markAllTasksDone}
         disabled={tasks.every(({ done }) => done)}
-			>
-				Ukończ wszystkie
-			</button>
+      >
+        Ukończ wszystkie
+      </button>
     </div>
   );
 };
