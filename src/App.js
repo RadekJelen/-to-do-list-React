@@ -1,6 +1,6 @@
 import Form from "./Form";
 import List from "./List";
-import TextButtons from "./Text-Buttons";
+import Buttons from "./Buttons";
 import Section from "./Section";
 import Header from "./Header";
 import Container from "./Container"
@@ -8,10 +8,7 @@ import { useState } from "react";
 
 function App() {
   const [hideDoneTasks, setUpHideDone] = useState(false);
-  const [tasks, setTasks] = useState([
-    { id: 1, content: "test", done: true },
-    { id: 2, content: "test1", done: false },
-  ]);
+  const [tasks, setTasks] = useState([]);
 
   const toggleHideDone = () => {
     setUpHideDone(hideDoneTasks => !hideDoneTasks);
@@ -58,7 +55,7 @@ function App() {
           deleteTask={deleteTask}
           toggleTaskDone={toggleTaskDone}
         />}
-        headerButtons={<TextButtons
+        headerButtons={<Buttons
           tasks={tasks}
           hideDoneTasks={hideDoneTasks}
           toggleHideDone={toggleHideDone}
@@ -67,6 +64,6 @@ function App() {
       />
     </Container>
   );
-}
+};
 
 export default App;

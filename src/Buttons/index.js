@@ -1,6 +1,6 @@
 import "./style.css";
 
-const TextButtons = ({ tasks, hideDoneTasks, toggleHideDone, markAllTasksDone }) => {
+const Buttons = ({ tasks, hideDoneTasks, toggleHideDone, markAllTasksDone }) => {
   if (tasks.length === 0) {
     return null;
   }
@@ -24,4 +24,4 @@ const TextButtons = ({ tasks, hideDoneTasks, toggleHideDone, markAllTasksDone })
     </div>
   );
 };
-export default TextButtons;
+export default Buttons;
