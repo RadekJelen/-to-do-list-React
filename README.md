@@ -1,21 +1,23 @@
-# ✅ To-Do List with React
-Tired of forgetting your tasks, annoyed by sticky notes,.... this list is just for you.
+# ✅ To-Do List in React
+Tired of forgetting your tasks, annoyed by sticky notes,.... this list is just for you. 😉
 
 <br>
 
 ## 📝 Description
 
-On this page you can create tasks yourself, delete them from the list and deselect already completed parts.
+This is a simple TODO LIST created with react technology. On this page you can create tasks yourself, delete them from the list and deselect already completed parts. All tasks will be saved in local storage. 
 
-27.07.22r.
-
-The project has been upgraded with new interesting features. Like hiding completed tasks and quickly deselecting all already completed tasks.
 
 <br>
 
 ## 🕹️  Demo
 
 You can find the demo [here](https://radekjelen.github.io/to-do-list-React/)
+
+<br>
+
+## 👀 Preview 
+![GIF how to use this app](/src/previewGif.gif)
 
 <br>
 
