@@ -1,11 +1,11 @@
-import Form from "./Form";
-import List from "./List";
-import Buttons from "./Buttons";
-import Section from "./Section";
-import Header from "./Header";
-import Container from "./Container"
-import { useTasks } from "./useTasks";
+import Form from "../Form";
+import List from "../List";
+import Buttons from "../Buttons";
+import Section from "../Section";
+import Header from "../Header";
+import { useTasks } from "../useTasks";
 import { useState } from "react";
+import { StyledMain } from "./styled";
 
 
 function App() {
@@ -16,9 +16,9 @@ function App() {
   };
 
   const { tasks, deleteTask, toggleTaskDone, markAllTasksDone, addNewTask } = useTasks();
-  
+
   return (
-    <Container>
+    <StyledMain>
       <Header title="Lista zadań" />
       <Section
         title="Dodaj nowe zadanie"
@@ -39,7 +39,7 @@ function App() {
           markAllTasksDone={markAllTasksDone}
         />}
       />
-    </Container>
+    </StyledMain>
   );
 };
 
