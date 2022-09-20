@@ -13,7 +13,7 @@ export const StyledItem = styled.li`
 	display: flex;
 	align-items: center;
 
-  ${({hidden}) => hidden && css`
+  ${({ hidden }) => hidden && css`
     display: none;
   `}
 `;
@@ -22,7 +22,7 @@ export const StyledSpan = styled.span`
 	margin: 0 15px;
 	flex-grow: 1;
 
-  ${({done}) => done && css`
+  ${({ done }) => done && css`
     text-decoration: line-through;
   `}
 `;
