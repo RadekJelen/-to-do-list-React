@@ -1,8 +1,8 @@
-import Form from "../Form";
-import List from "../List";
-import Buttons from "../Buttons";
-import Section from "../Section";
-import Header from "../Header";
+import Form from "../features/Form";
+import List from "../features/List";
+import Buttons from "../features/Buttons";
+import Section from "../common/Section";
+import Header from "../common/Header";
 import { useTasks } from "../useTasks";
 import { useState } from "react";
 import { StyledMain } from "./styled";
