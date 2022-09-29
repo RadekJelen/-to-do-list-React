@@ -1,14 +1,13 @@
-import Form from "../features/Form";
-import List from "../features/List";
-import Buttons from "../features/Buttons";
-import Section from "../common/Section";
-import Header from "../common/Header";
-import { useTasks } from "../useTasks";
+import Form from "./Form";
+import List from "./List";
+import Buttons from "./Buttons";
+import Section from "../../common/Section";
+import Header from "../../common/Header";
+import { useTasks } from "../../useTasks";
 import { useState } from "react";
-import { StyledMain } from "./styled";
 
 
-function App() {
+function TasksSide () {
   const [hideDoneTasks, setUpHideDone] = useState(false);
 
   const toggleHideDone = () => {
@@ -18,7 +17,7 @@ function App() {
   const { tasks, deleteTask, toggleTaskDone, markAllTasksDone, addNewTask } = useTasks();
 
   return (
-    <StyledMain>
+    <>
       <Header title="Lista zadań" />
       <Section
         title="Dodaj nowe zadanie"
@@ -39,8 +38,8 @@ function App() {
           markAllTasksDone={markAllTasksDone}
         />}
       />
-    </StyledMain>
+    </>
   );
 };
 
-export default App;
+export default TasksSide;

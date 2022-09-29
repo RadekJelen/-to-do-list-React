@@ -13,6 +13,8 @@ export const GlobalStyled = createGlobalStyle`
 	font-family: 'Open Sans', sans-serif;
 	background-color: #eee;
 	padding: 20px;
+  max-width: 1000px;
+	margin: auto;
 }
 
 button {
