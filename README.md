@@ -26,8 +26,9 @@ You can find the demo [here](https://radekjelen.github.io/to-do-list-React/)
 - CSS (Grid, Flex, media queries)
 - JavaScript (ES6+)
 - Create React App
-- BEM
-- Markdown
+- React Hooks
+- Styled Components
+- Redux
 
 <br>
 

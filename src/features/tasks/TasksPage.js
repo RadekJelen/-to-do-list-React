@@ -5,7 +5,7 @@ import Section from "../../common/Section";
 import Header from "../../common/Header";
 
 
-function TasksSide () {
+function TasksPage () {
 
 
   return (
@@ -25,4 +25,4 @@ function TasksSide () {
   );
 };
 
-export default TasksSide;
+export default TasksPage;
