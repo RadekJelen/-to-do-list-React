@@ -34,7 +34,7 @@ export const StyledButton = styled.button`
 
   &:hover {
     background-color: hsl(180, 100%, 30%);
-    transform: scale(1.05);
+    transform: scale(1.01);
   }
   
   &:active {

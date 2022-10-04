@@ -28,8 +28,8 @@ export const StyledSpan = styled.span`
 `;
 
 export const StyledButton = styled.button`
-	height: 25px;
-	width: 25px;
+	height: 30px;
+	width: 30px;
 	color: #fff;
 	background-color: #1A7B1F;
 	border: none;
