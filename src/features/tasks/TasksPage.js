@@ -1,12 +1,11 @@
 import Form from "./Form";
 import List from "./List";
-import Buttons from "./Buttons";
 import Section from "../../common/Section";
 import Header from "../../common/Header";
+import DoneTasksButtons from "./TextButtons/DoneTasksButtons";
+import ExampleTasksButton from "./TextButtons/ExampleTasksButton";
 
-
-function TasksPage () {
-
+function TasksPage() {
 
   return (
     <>
@@ -14,12 +13,12 @@ function TasksPage () {
       <Section
         title="Dodaj nowe zadanie"
         body={<Form />}
+        headerButtons={<ExampleTasksButton />}
       />
       <Section
         title="Lista zadań"
         body={<List />}
-        headerButtons={<Buttons
-        />}
+        headerButtons={<DoneTasksButtons />}
       />
     </>
   );
