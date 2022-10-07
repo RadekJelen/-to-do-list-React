@@ -1,25 +1,28 @@
+import Container from "../../common/Container";
+import Header from "../../common/Header";
 import Section from "../../common/Section";
-import { Content } from "./styled";
+import { StyledParagraf } from "./styled";
+
 
 const AuthorPage = () => {
 
   return (
-    <>
-      <h1>O autorze</h1>
+    <Container>
+      <Header title="O autorze" />
       <Section
         title="Radosław Jeleń"
         body={
           <>
-            <Content>
+            <StyledParagraf>
             Mam 27 lat. Mieszkam w Gdańsku. Studiowałem dietetykę i zarządzanie, a z zawodu jestem kucharzem. Bardzo lubię gotować i zawsze to ze mną zostanie, lecz postanowiłem dokonać zmiany zawodu. 
-            </Content>
-            <Content last>
+            </StyledParagraf>
+            <StyledParagraf last>
             Padło na IT - zapewne nikogo to tutaj nie dziwi 😉
-            </Content>
+            </StyledParagraf>
           </>
         }
       />
-    </>
+    </Container>
   );
 }
 
