@@ -6,7 +6,7 @@ import {
   selectIsEveryTaskHide,
   toggleHideDone,
   setAllDone
-} from "../../tasksSlice";
+} from "../../../tasksSlice";
 import { StyledButton, StyledDiv } from "../styled";
 
 const DoneTasksButtons = () => {

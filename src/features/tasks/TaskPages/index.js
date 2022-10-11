@@ -1,8 +1,8 @@
 import Form from "./Form";
 import List from "./List";
-import Section from "../../common/Section";
-import Header from "../../common/Header";
-import Container from "../../common/Container";
+import Section from "../../../common/Section";
+import Header from "../../../common/Header";
+import Container from "../../../common/Container";
 import DoneTasksButtons from "./TextButtons/DoneTasksButtons";
 import ExampleTasksButton from "./TextButtons/ExampleTasksButton";
 

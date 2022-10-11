@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled, { css } from "styled-components";
 
 export const StyledList = styled.ul`
@@ -25,6 +26,14 @@ export const StyledSpan = styled.span`
   ${({ done }) => done && css`
     text-decoration: line-through;
   `}
+`;
+
+const StledTaskLink = styled(Link)`
+  text-decoration: none;
+  color: teal;
+  &:hover {
+    filter: brightness(110%);
+  }
 `;
 
 export const StyledButton = styled.button`
@@ -56,3 +65,5 @@ export const StyledDeleteButton = styled(StyledButton)`
     background-color: hsl(348, 83%, 57%);
   }
 `;
+
+export { StledTaskLink };
