@@ -1,3 +1,4 @@
+import { nanoid } from "@reduxjs/toolkit";
 import { delay, call, put, select, takeEvery } from "redux-saga/effects"
 import { getExampleTasks } from "../tasks/getExampleTasks"
 import { saveTasksInLocalStorage } from "./tasksLocalStorage";
@@ -12,7 +13,11 @@ function* fetchExampleTasksHandler() {
   try {
     yield delay(1000);
     const exampleTasks = yield call(getExampleTasks);
-    yield put(fetchExampleTasksSuccess(exampleTasks));
+    const exampleTasksWithIds = exampleTasks.map(exampleTask => ({
+      ...exampleTask,
+      id: nanoid(),
+    }));
+    yield put(fetchExampleTasksSuccess(exampleTasksWithIds));;
   } catch {
     yield put(fetchExampleTasksFailure())
     yield call(alert, "Error, coś poszło nie tak! ⚠️");

@@ -17,11 +17,11 @@ const TasksPage = () => {
       <Section
         title={task ? task.content : "Nie znaleziono zadania 😔"}
         body={
-          task
-            ? <TaskDetails>
+          !!task && (
+            <TaskDetails>
               <strong>Ukończone: </strong>{task.done ? "Tak" : "Nie"}
             </TaskDetails>
-            : null
+          )
         }
       />
     </Container>
