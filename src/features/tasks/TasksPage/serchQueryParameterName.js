@@ -1,0 +1,1 @@
+export const searchQueryParameterName = "szukaj";

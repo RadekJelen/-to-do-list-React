@@ -5,6 +5,7 @@ import Header from "../../../common/Header";
 import Container from "../../../common/Container";
 import DoneTasksButtons from "./TextButtons/DoneTasksButtons";
 import ExampleTasksButton from "./TextButtons/ExampleTasksButton";
+import Search from "./Search";
 
 
 function TasksPage() {
@@ -16,6 +17,10 @@ function TasksPage() {
         title="Dodaj nowe zadanie"
         body={<Form />}
         headerButtons={<ExampleTasksButton />}
+      />
+      <Section
+        title="Wyszukiwarka"
+        body={<Search />}
       />
       <Section
         title="Lista zadań"

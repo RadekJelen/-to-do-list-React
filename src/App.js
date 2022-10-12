@@ -1,7 +1,7 @@
 import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom"
 import Navigation from "./common/Navigation"
 import AuthorPage from "./features/author"
-import TasksPage from "./features/tasks/TaskPages";
+import TasksPage from "./features/tasks/TasksPage";
 import TaskPage from "./features/tasks/TaskPage";
 
 export const App = () => (

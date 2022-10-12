@@ -9,17 +9,6 @@ export const StyledForm = styled.form`
   }
 `;
 
-export const StyledInput = styled.input`
-	margin-right: 10px;
-	padding: 8px;
-	border: 2px solid #ddd;
-	flex-grow: 1;
-
-  @media (max-width: 767px) {
-    margin-right: 0;
-  }
-`;
-
 export const StyledButton = styled.button`
 	background-color: teal;
 	color: #fff;

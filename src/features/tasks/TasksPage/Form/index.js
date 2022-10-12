@@ -2,7 +2,8 @@ import { nanoid } from "@reduxjs/toolkit";
 import { useRef, useState } from "react";
 import { useDispatch } from "react-redux";
 import { addTask } from "../../tasksSlice";
-import { StyledForm, StyledButton, StyledInput } from "./styled";
+import { StyledForm, StyledButton } from "./styled";
+import { StyledInput } from "../Input/styled";
 
 const Form = () => {
   const [newTaskContent, setNewTaskContent] = useState("");
@@ -31,6 +32,7 @@ const Form = () => {
       onSubmit={onFormSubmit}
     >
       <StyledInput
+        shorter
         placeholder="Co jest do zrobienia?"
         value={newTaskContent}
         onChange={({ target }) => setNewTaskContent(target.value)}

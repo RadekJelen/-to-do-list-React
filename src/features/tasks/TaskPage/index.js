@@ -6,7 +6,8 @@ import Section from "../../../common/Section";
 import { getTaskById } from "../tasksSlice";
 import { TaskDetails } from "./styled";
 
-const TaskPage = () => {
+
+const TasksPage = () => {
   const { id } = useParams();
   const task = useSelector(state => getTaskById(state, id));
 
@@ -27,4 +28,4 @@ const TaskPage = () => {
   );
 };
 
-export default TaskPage;
+export default TasksPage;
