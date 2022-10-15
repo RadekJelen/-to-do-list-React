@@ -1,12 +1,29 @@
 # ✅ To-Do List in React
-Tired of forgetting your tasks, annoyed by sticky notes,.... this list is just for you. 😉
+Tired of forgetting your tasks, annoyed by sticky notes? This list is just for you. 😉
+
+<p>
+  This project is the result of developing the <a href="https://github.com/RadekJelen/to-do-list" target="_blank">previous version of to-do list</a>.
+</p>
 
 <br>
 
 ## 📝 Description
 
-This is a simple TODO LIST created with react technology. On this page you can create tasks yourself, delete them from the list and deselect already completed parts. All tasks will be saved in local storage. 
+This is a simple TODO LIST created with react technology.
 
+What you can do:
+
+- **Add new own tasks**
+- **Remove unnecessary tasks**
+- **Mark completed tasks**
+- **Fetch example tasks**
+- **Checking the details of the task**
+- **Search for a specific task**
+- **And much more...**
+
+Will definitely visit the page about the author, thank you ❤️
+
+<p>This project was bootstrapped with <a href="https://github.com/facebook/create-react-app">Create React App</a></p>
 
 <br>
 
@@ -27,8 +44,10 @@ You can find the demo [here](https://radekjelen.github.io/to-do-list-React/)
 - JavaScript (ES6+)
 - Create React App
 - React Hooks
+- React Router
 - Styled Components
 - Redux
+- Redux-Saga
 
 <br>
 
