@@ -24,7 +24,10 @@ const Form = () => {
       done: false,
       id: nanoid()
     }));
-    setNewTaskContent("")
+
+    setNewTaskContent("");
+    
+    inputRef.current.focus();
   };
 
   return (
