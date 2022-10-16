@@ -1,4 +1,4 @@
-import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom"
+import { HashRouter, Switch, Route, Redirect } from "react-router-dom"
 import Navigation from "./common/Navigation"
 import AuthorPage from "./features/author"
 import TasksPage from "./features/tasks/TasksPage";
@@ -6,7 +6,7 @@ import TaskPage from "./features/tasks/TaskPage";
 import { toAuthor, toTask, toTasks } from "./routes";
 
 export const App = () => (
-  <BrowserRouter basename="/to-do-list-React">
+  <HashRouter>
     <Navigation />
     <Switch>
       <Route path={toTask()}>
@@ -22,5 +22,5 @@ export const App = () => (
         <Redirect to={toTasks()} />
       </Route>
     </Switch>
-  </BrowserRouter>
+  </HashRouter>
 )
